@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       const json = JSON.parse(jsonInput);
-      const res = await axios.post('https://bfhl-backend-7p4a.onrender.com', json);
+      const res = await axios.post('https://bfhl-backend-7p4a.onrender.com/bfhl', json);
       setResponse(res.data);
       setError('');
     } catch (err) {
